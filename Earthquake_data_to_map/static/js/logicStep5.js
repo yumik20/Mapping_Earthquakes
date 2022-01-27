@@ -123,7 +123,6 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
         position: "bottomright"
     });
 
-
     // Then add all the details for the legend.
     legend.onAdd = function () {
         let div = L.DomUtil.create("div", "info legend");
@@ -150,11 +149,11 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
     };
 
 
-    
+    legend.addTo(map);
     //then we add the earthqueke layer to our map.
     earthquakes.addTo(map);
 
-    legend.addTo(map);
+
 });
 
 
